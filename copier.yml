@@ -1,0 +1,17 @@
+# Configure jinja2 defaults to make syntax highlighters happy
+_templates_suffix: .jinja
+_subdirectory: src
+_envops:
+  block_end_string: "%}"
+  block_start_string: "{%"
+  comment_end_string: "#}"
+  comment_start_string: "{#"
+  keep_trailing_newline: true
+  variable_end_string: "}}"
+  variable_start_string: "{{"
+
+project_name:
+  type: str
+  default: New project
+  help:
+    Human readable name of the project. It will be used in the README.rst file.
